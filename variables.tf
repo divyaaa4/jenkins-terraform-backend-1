@@ -24,18 +24,18 @@ variable "tag_name" {
 } 
 variable "ami_id" { 
     description = "AMI for Ubuntu Ec2 instance" 
-    default     = "ami-0aee2d0182c9054ac" 
+    default     = "ami-020db2c14939a8efb" 
 }
 variable "versioning" {
     type        = bool
     description = "(Optional) A state of versioning."
     default     = true
 }
-variable "acl" {
-    type        = string
-    description = " Defaults to private "
-    default     = "private"
-}
+# variable "acl" {
+#     type        = string
+#     description = " Defaults to private "
+#     default     = "private"
+# }
 variable "bucket_prefix" {
     type        = string
     description = "(required since we are not using 'bucket') Creates a unique bucket name beginning with the specified prefix"
