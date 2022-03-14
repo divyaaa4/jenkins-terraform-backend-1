@@ -1,7 +1,7 @@
 terraform {
-  required_version = "~> 1.1.7"
+  required_version = "~> 0.13"
     required_providers {
-    aws  = "~> 4.5.0"
+    aws  = "~> 3.74.2"
   }
   backend "s3" {
     bucket = "my-dev-tf-state-bucket-1"
